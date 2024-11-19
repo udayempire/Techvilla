@@ -1,10 +1,18 @@
 import { Appbar } from "@/Components/Appbar";
 import { Card } from "@/Components/Card";
-import { Button } from "@/Components/ui/Button";
-import Image from "next/image"
+import { Footer } from "@/Components/Footer";
+import { Button2 } from "@/Components/ui/Button2";
+import Image from "next/image";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/Components/ui/carousel"
 export default function Home() {
   return (
-    <div className=" h-screen bg-cover bg-center" style={{ backgroundImage: "url('/techvilla-bg.png')" }}>
+    <div className=" h-full bg-cover bg-center text-white" style={{ backgroundImage: "url('/techvilla-bg.png')" }}>
       <div>
         <Appbar />
       </div>
@@ -17,7 +25,7 @@ export default function Home() {
           </div>
           <div className="mt-2 space-y-4 flex flex-col items-center">
             <p className="text-center ">Empowering the Next Generation of Developers</p>
-            <Button text="Join Us" />
+            <Button2 text="Join Us" />
           </div>
         </div>
         {/* Heading of website finishes */}
@@ -35,6 +43,31 @@ export default function Home() {
           </div>
         </div>
         {/* Vision Mission ends  */}
+
+        {/* Glimpses */}
+        <div className="flex flex-col items-center gap-6 my-4">
+          <h1 className="text-center text-xl">Glimpses</h1>
+
+          <Carousel className="w-full max-w-7xl rounded-md">
+            <CarouselContent className="rounded-md">
+              {Array.from({ length: 10 }).map((_, index) => (
+                <CarouselItem key={index}>
+                  <div className="p-1 flex justify-center">
+                    <Image src="/codebeta-winners.jpg" className="rounded-md" width={1300} height={650} alt="" />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+
+
+        </div>
+      </div>
+
+      <div>
+        <Footer />
       </div>
 
     </div>
