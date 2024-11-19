@@ -28,8 +28,14 @@ export const Footer = () => {
                     Contact us:
                 </div>
                 <div>
-                    <p>codingclub@lnct.ac.in</p>
-                    <p>techvillalnct@gmail.com</p>
+                    <div className="flex items-center gap-2">
+                        <Image src="/email.svg" width="25" height="25" alt="" />
+                        <p>codingclub@lnct.ac.in</p>
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <Image src="/email.svg" width="25" height="25" alt="" />
+                        <p>techvillalnct@gmail.com</p>
+                    </div>
                 </div>
 
             </div>
