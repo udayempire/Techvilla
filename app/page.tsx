@@ -2,6 +2,8 @@ import { Appbar } from "@/Components/Appbar";
 import { Card } from "@/Components/Card";
 import { Footer } from "@/Components/Footer";
 import { Button2 } from "@/Components/ui/Button2";
+import { coreTeam } from "@/data/coreTeam";
+// import { Team } from "@/Components/Team";
 import Image from "next/image";
 import {
   Carousel,
@@ -10,6 +12,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/Components/ui/carousel"
+import { Team } from "@/Components/Team";
 export default function Home() {
   return (
     <div className=" h-full bg-cover bg-center text-white" style={{ backgroundImage: "url('/techvilla-bg.png')" }}>
@@ -61,9 +64,21 @@ export default function Home() {
             <CarouselPrevious />
             <CarouselNext />
           </Carousel>
-
-
         </div>
+        {/* Glimpses end hota hai*/}
+      </div>
+
+      {/* CORE TEAM */}
+      <div>
+        <h1 className="text-center text-xl mb-8 my-5">Meet Our Team</h1>
+        <div className="grid grid-cols-5 gap-6">
+          {coreTeam.map((data) => (
+            <Team TeamProps={data} name={data.name} img={data.img} role={data.role} />
+          ))}
+        </div>
+
+
+
       </div>
 
       <div>
