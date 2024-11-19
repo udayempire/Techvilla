@@ -13,6 +13,7 @@ import {
   CarouselPrevious,
 } from "@/Components/ui/carousel"
 import { Team } from "@/Components/Team";
+import { UpcomingEvent } from "@/Components/UpcomingEvent";
 export default function Home() {
   return (
     <div className=" h-full bg-cover bg-center text-white" style={{ backgroundImage: "url('/techvilla-bg.png')" }}>
@@ -68,6 +69,11 @@ export default function Home() {
         {/* Glimpses end hota hai*/}
       </div>
 
+      <div className="flex flex-col items-center">
+        <h1 className="text-center text-xl mb-8 my-5">Upcoming Events</h1>
+        <UpcomingEvent/>
+      </div>
+
       {/* CORE TEAM */}
       <div>
         <h1 className="text-center text-xl mb-8 my-5">Meet Our Team</h1>
@@ -76,9 +82,6 @@ export default function Home() {
             <Team TeamProps={data} name={data.name} img={data.img} role={data.role} />
           ))}
         </div>
-
-
-
       </div>
 
       <div>
