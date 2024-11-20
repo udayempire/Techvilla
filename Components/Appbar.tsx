@@ -1,5 +1,6 @@
 import Link from  "next/link"
 import Image from "next/image"
+import { Button } from "./ui/button"
 export const Appbar=()=>{
     return <div className="flex justify-between text-xl px-5 items-center backdrop-blur-sm">
         <div>
@@ -12,8 +13,6 @@ export const Appbar=()=>{
             <Link href={"/events"}>Events</Link>
             <Link href={"/blog"}>Blogs</Link>
         </div>
-        <button>
-            Login
-        </button>
+        <Button variant={"outline"} >Login</Button>
     </div>
 }

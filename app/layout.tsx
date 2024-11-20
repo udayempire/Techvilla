@@ -24,6 +24,9 @@ export default function RootLayout({
       <body
         className={` antialiased`}
       >
+        <div className="text-center bg-yellow-500 font-semibold py-1 ">
+          JOIN US FOR OUR ORIENTATION 2024-25 !!
+        </div>
         {children}
       </body>
     </html>
