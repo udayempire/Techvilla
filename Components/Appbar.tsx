@@ -8,7 +8,7 @@ export const Appbar=()=>{
         </div>
         <div className="flex gap-6">
             <Link href="/" >Home</Link>
-            <Link href={"/about"}>About Us</Link>
+            <Link href={"/about"}>About</Link>
             <Link href={"/ourTeam"} >Our Team</Link>
             <Link href={"/events"}>Events</Link>
             <Link href={"/blog"}>Blogs</Link>

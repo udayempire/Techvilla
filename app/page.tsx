@@ -2,7 +2,7 @@ import { Appbar } from "@/Components/Appbar";
 import { Card } from "@/Components/Card";
 import { Footer } from "@/Components/Footer";
 import { Button2 } from "@/Components/ui/Button2";
-import { coreTeam } from "@/data/coreTeam";
+import { coreTeam } from "@/data/data";
 // import { Team } from "@/Components/Team";
 import Image from "next/image";
 import {

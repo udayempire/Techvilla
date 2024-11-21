@@ -75,3 +75,27 @@ export const coreTeam = [
         img:"/coreTeam/team.png",
     },
 ]
+
+
+export const pastEvents=[
+    {
+        title:"Open Source Seminar",
+        date:"",
+        desc:""
+    },
+    {
+        title:"Solidty Workshop",
+        date:"",
+        desc:""
+    },
+    {
+        title:"CodeVita Hackathon",
+        date:"",
+        desc:""
+    },
+    {
+        title:"CodeVita Coding Competition",
+        date:"",
+        desc:""
+    },
+]
