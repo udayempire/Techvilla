@@ -1,26 +1,27 @@
 import Image from "next/image"
+import Link from "next/link"
 export const Footer = () => {
     return <div className="flex flex-col gap-4 my-3 backdrop-blur-lg py-10">
         <div className="flex mx-16 justify-between">
             <div className="flex items-center gap-4">
                 <p className="text-xl" >Join Us:</p>
                 <div className="flex gap-2">
-                    <div>
+                    <Link href={"https://www.instagram.com/techvilla_lnct/"} >
                         {/* Instagram */}
                         <Image src="/insta.svg" width="50" height="50" alt="" />
-                    </div>
-                    <div>
+                    </Link>
+                    <Link href={""}>
                         {/* X */}
                         <Image src="/X.svg" width="50" height="50" alt="" />
-                    </div>
-                    <div>
+                    </Link>
+                    <Link href={""}>
                         {/* Github */}
                         <Image src="/github.svg" width="50" height="50" alt="" />
-                    </div>
-                    <div>
+                    </Link>
+                    <Link href={""}>
                         {/* LinkedIn */}
                         <Image src="/linkedin.svg" width="50" height="50" alt="" />
-                    </div>
+                    </Link>
                 </div>
             </div>
             <div className="flex items-center gap-4">

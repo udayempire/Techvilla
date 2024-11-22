@@ -1,20 +1,18 @@
+"use client"
 import { Appbar } from "@/Components/Appbar";
 import { Card } from "@/Components/Card";
 import { Footer } from "@/Components/Footer";
 import { Button2 } from "@/Components/ui/Button2";
 import { coreTeam } from "@/data/data";
-// import { Team } from "@/Components/Team";
+import { useRouter } from "next/navigation"
 import Image from "next/image";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/Components/ui/carousel"
+import {Carousel,CarouselContent,CarouselItem,CarouselNext,CarouselPrevious,} from "@/Components/ui/carousel"
 import { Team } from "@/Components/Team";
 import { UpcomingEvent } from "@/Components/UpcomingEvent";
+import { url } from "inspector";
+
 export default function Home() {
+  const router = useRouter();
   return (
     <div className=" h-full bg-cover bg-center text-white" style={{ backgroundImage: "url('/techvilla-bg.png')" }}>
       <div>
@@ -29,7 +27,9 @@ export default function Home() {
           </div>
           <div className="mt-2 space-y-4 flex flex-col items-center">
             <p className="text-center ">Empowering the Next Generation of Developers</p>
-            <Button2 text="Join Us" />
+            <Button2 onClick={() => {
+              router.push("/home")
+            }} text="Join Us" />
           </div>
         </div>
         {/* Heading of website finishes */}
@@ -71,7 +71,7 @@ export default function Home() {
 
       <div className="flex flex-col items-center">
         <h1 className="text-center text-xl mb-8 my-5">Upcoming Events</h1>
-        <UpcomingEvent/>
+        <UpcomingEvent />
       </div>
 
       {/* CORE TEAM */}
@@ -79,7 +79,7 @@ export default function Home() {
         <h1 className="text-center text-xl mb-8 my-5">Meet Our Team</h1>
         <div className="grid grid-cols-5 gap-6">
           {coreTeam.map((data) => (
-            <Team TeamProps={data} name={data.name} img={data.img} role={data.role} />
+            <Team  name={data.name} img={data.img} role={data.role} />
           ))}
         </div>
       </div>

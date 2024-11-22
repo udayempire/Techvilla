@@ -1,3 +1,4 @@
+//core team details
 export const coreTeam = [
     {
         name: "Aryan Singh Parihar",
@@ -76,7 +77,7 @@ export const coreTeam = [
     },
 ]
 
-
+//past events
 export const pastEvents=[
     {
         title:"Open Source Seminar",
@@ -99,3 +100,44 @@ export const pastEvents=[
         desc:""
     },
 ]
+
+//roadmaps details
+
+export const roadMapsdetails=[
+    {
+        img:"/codebeta-winners.jpg",
+        title:"Web Dev Roadmap",
+        desc:"Learn Complete Full Stack Development",
+        link:"github.com"
+    },
+    {
+        img:"/codebeta-winners.jpg",
+        title:"App Development",
+        desc:"Learn Complete Full Stack App Developement",
+        link:"github.com"
+    },
+    {
+        img:"/codebeta-winners.jpg",
+        title:"Blockchain",
+        desc:"Learn the Most Demanding BlockChain Skillset",
+        link:"github.com"
+    },
+    {
+        img:"/codebeta-winners.jpg",
+        title:"Web Dev Roadmap",
+        desc:"Learn Complete Full Stack Development",
+        link:"github.com"
+    },
+    {
+        img:"/codebeta-winners.jpg",
+        title:"Web Dev Roadmap",
+        desc:"Learn Complete Full Stack Development",
+        link:"github.com"
+    },
+
+]
+
+// img: string,
+// title: string,
+// desc: string,
+// link: string
