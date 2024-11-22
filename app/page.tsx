@@ -35,7 +35,7 @@ export default function Home() {
         {/* Heading of website finishes */}
 
         {/* Vision Mission  */}
-        <div className="flex justify-between p-4 px-16">
+        <div className="flex justify-center p-4 gap-14">
           <div>
             <Card title="Vision" desc="Our Vision is to empower students with the power of coding and learning in public, that can unlock a world of infinite possibilities, and to alleviate the tech leaders of tommorow." />
           </div>
