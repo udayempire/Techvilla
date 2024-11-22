@@ -1,7 +1,7 @@
 //core team details
 export const coreTeam = [
     {
-        name: "Aryan Singh Parihar",
+        name: "Aryan Singh",
         role: "President",
         img:"/coreTeam/team.png",
     },

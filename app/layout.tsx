@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 // import localFont from "next/font/local";
 import { Michroma } from "next/font/google";
 import "./globals.css";
+import Link from "next/link"
 
 const michroma = Michroma({
   weight: "400", // Specify the font weight you need
@@ -24,9 +25,9 @@ export default function RootLayout({
       <body
         className={` antialiased`}
       >
-        <div className="text-center bg-[#FF8B12] font-semibold py-1 ">
+        <Link href={"https://lu.ma/f6pqfzl8"} className="flex justify-center bg-[#FF8B12] font-semibold py-1  ">
           JOIN US FOR OUR ORIENTATION 2024-25 !!
-        </div>
+        </Link>
         {children}
       </body>
     </html>

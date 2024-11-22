@@ -9,7 +9,6 @@ import Image from "next/image";
 import {Carousel,CarouselContent,CarouselItem,CarouselNext,CarouselPrevious,} from "@/Components/ui/carousel"
 import { Team } from "@/Components/Team";
 import { UpcomingEvent } from "@/Components/UpcomingEvent";
-import { url } from "inspector";
 
 export default function Home() {
   const router = useRouter();
@@ -35,7 +34,7 @@ export default function Home() {
         {/* Heading of website finishes */}
 
         {/* Vision Mission  */}
-        <div className="flex justify-center p-4 gap-14">
+        <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 place-items-center p-4 gap-14">
           <div>
             <Card title="Vision" desc="Our Vision is to empower students with the power of coding and learning in public, that can unlock a world of infinite possibilities, and to alleviate the tech leaders of tommorow." />
           </div>
@@ -75,11 +74,11 @@ export default function Home() {
       </div>
 
       {/* CORE TEAM */}
-      <div>
+      <div className="px-24">
         <h1 className="text-center text-xl mb-8 my-5">Meet Our Team</h1>
-        <div className="grid grid-cols-5 gap-6">
-          {coreTeam.map((data) => (
-            <Team  name={data.name} img={data.img} role={data.role} />
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 px-10 mx-auto">
+          {coreTeam.map((data,index) => (
+            <Team key={index}  name={data.name} img={data.img} role={data.role} />
           ))}
         </div>
       </div>
