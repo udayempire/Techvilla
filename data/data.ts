@@ -31,6 +31,11 @@ export const coreTeam = [
         img:"/coreTeam/bhavya.png",
     },
     {
+        name:"Priyanshu Lohani",
+        role:"Tech Lead",
+        img:"/coreTeam/priyanshu.png",
+    },
+    {
         name:"Aaaashi Rathod",
         role:"Event Manager",
         img:"/coreTeam/aashi.png",
@@ -39,11 +44,6 @@ export const coreTeam = [
         name:"Uday Kumar",
         role:"Tech Lead",
         img:"/coreTeam/uday.png",
-    },
-    {
-        name:"Priyanshu Lohani",
-        role:"Tech Lead",
-        img:"/coreTeam/priyanshu.png",
     },
     {
         name:"Abhishek Yadav",

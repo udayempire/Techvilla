@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Button } from "./ui/button"
+import { Button } from "./button"
 export const PastEvents = () => {
     return <div className="w-full max-w-lg flex flex-col  gap-4 border p-6 rounded-md backdrop-blur-lg">
         <Image src={"/codebeta-winners.jpg"} className="rounded-md" width={500} height={1200} alt="" ></Image>

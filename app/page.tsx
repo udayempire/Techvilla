@@ -2,11 +2,11 @@
 import { Appbar } from "@/Components/Appbar";
 import { Card } from "@/Components/Card";
 import { Footer } from "@/Components/Footer";
-import { Button2 } from "@/Components/ui/Button2";
+import { Button2 } from "@/Components/Button2";
 import { coreTeam } from "@/data/data";
 import { useRouter } from "next/navigation"
 import Image from "next/image";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, } from "@/Components/ui/carousel"
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, } from "@/Components/carousel"
 import { Team } from "@/Components/Team";
 import { UpcomingEvent } from "@/Components/UpcomingEvent";
 const images = [

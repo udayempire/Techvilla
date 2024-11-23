@@ -1,5 +1,5 @@
 "use client"
-import { Button2 } from "./ui/Button2";
+import { Button2 } from "./Button2";
 import Image from "next/image";
 import { useRouter } from "next/navigation"
 interface Roadmaps {
