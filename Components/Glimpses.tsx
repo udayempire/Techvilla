@@ -1,4 +1,0 @@
-interface Glimpses={
-    link:string,
-    
-}
