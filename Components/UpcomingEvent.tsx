@@ -3,7 +3,7 @@ import { Button } from "@/Components/ui/button"
 import { useRouter } from "next/navigation"
 export const UpcomingEvent = () => {
     const router = useRouter()
-    return <div className="w-full max-w-md flex flex-col  gap-4 border  rounded-md backdrop-blur-lg">
+    return <div id="events" className="w-full max-w-md flex flex-col  gap-4 border  rounded-md backdrop-blur-lg">
 
         <Image src={"/orientation.png"} className="rounded-md w-full " width={500} height={0} alt=""  ></Image>
         <h1 className="text-center font-semibold ">Techvilla Orientation 2024-25</h1>
@@ -23,8 +23,6 @@ export const UpcomingEvent = () => {
                 router.push("https://lu.ma/f6pqfzl8")
             }}
             >Register Now</Button>
-
         </div>
     </div>
-
 }

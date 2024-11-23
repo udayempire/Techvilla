@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { Button } from "./ui/button"
+// import { Button } from "./ui/button"
 import { useState } from "react";
 
 export const Appbar = () => {
@@ -64,12 +64,12 @@ export const Appbar = () => {
                     <Link href="/ourTeam" className="hover:text-gray-300">
                         Our Team
                     </Link>
-                    <Link href="/events" className="hover:text-gray-300">
+                    <Link href="#events" className="hover:text-gray-300">
                         Events
                     </Link>
-                    <Button variant="outline" className="mt-2 md:mt-0">
+                    {/* <Button variant="outline" className="mt-2 md:mt-0">
                         Login
-                    </Button>
+                    </Button> */}
                 </div>
             </div>
         </div>
