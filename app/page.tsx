@@ -6,7 +6,7 @@ import { Button2 } from "@/Components/Button2";
 import { coreTeam } from "@/data/data";
 import { useRouter } from "next/navigation"
 import Image from "next/image";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, } from "@/Components/carousel"
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, } from "@/Components/Carousel"
 import { Team } from "@/Components/Team";
 import { UpcomingEvent } from "@/Components/UpcomingEvent";
 const images = [
